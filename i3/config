@@ -49,7 +49,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec --no-startup-id alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -203,5 +203,5 @@ gaps inner 15
 default_border none
 default_floating_border none
 
-exec feh --bg-fill ~/Pictures/wall.png
-exec_always ~/.config/polybar/launch.sh
+exec --no-startup-id feh --bg-fill ~/Pictures/wall.png
+exec_always --no-startup-id ~/.config/polybar/launch.sh
